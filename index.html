@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Varun Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <header id="home">
+    <nav id="dekstop-nav">
+      <div class="logo_title">Varun Gowda.K</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><img src="assets/moon.png" alt="Dart Light mode"class="theme-toggle" id="theme_icon"></li>
+        </ul>
+        
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Varun Gowda.K</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links" onclick="toggleMenu()">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="profile_about_pic_container">
+        <img
+          src="./assets/Varun_picc_white.png"
+          alt="Varun profile pic"
+          class="imagi"
+          id="varun_pic"
+        />
+      </div>
+      <div class="section_text">
+        <p class="section_text_p1">Helo,I'm</p>
+        <h2 class="title">Varun Gowda.K</h2>
+        <p class="section_text_p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn_color_1"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn_color_2" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="social_container">
+          <img
+            src="./assets/linkedin-black.png"
+            alt="my linkeden profile"
+            class="icon"
+            id="icon_linkedin"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github-black.png"
+            alt="my github profile"
+            class="icon"
+            id="icon_github"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+  </header>
+    <section id="about">
+      <p class="tag_line">Get To Know More</p>
+      <p class="Headings">About me</p>
+      <div class="about_container_outside">
+        <div class="profile_about_pic_container about_less">
+          <img src="./assets/above.png" alt="about-pic" class="about-pic" />
+        </div>
+        <div class="about_detail_container">
+          <div class="about_container">
+            <div class="details_container">
+              <img
+                src="./assets/education-black.png"
+                alt="certifications"
+                height="30rem"
+                id="edhhu"
+              />
+              <h3>Educations</h3>
+              <ul>
+                <p>PES College Mandya(BE in Electronics)</p>
+              </ul>
+            </div>
+            <div class="details_container">
+              <img
+                src="./assets/certi-black.png"
+                alt="certifications"
+                height="30rem"
+                class="less-opacity"
+                id="certii"
+              />
+              <h3>Certifications</h3>
+              <p>The Complete Python Bootcamp From Zero to Hero(udemy)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Myself Varungowda.K,studying at PES college of engineering
+              mandya.my coding journey started when i am in 5th semester,at first i
+              started learning python programming language,then i identified my
+              area of interest,which is front end development technology,i am
+              really an enthusiastic learner.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow-black.png"
+        alt="class_arrow"
+        class="icon arrow"
+        id="arroww_1"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+    <section id="skills">
+      <p class="tag_line">Explore My</p>
+      <p class="Headings">Skills</p>
+      <div class="skills_details_container">
+            <div class="article_container">
+              <div class="first">
+              <div class="skill_logo">
+              <div><img src="./assets/html_logo.png" alt="html icon" class="skill_icon"></div>
+              <div><h3>HTML</h3><p>Intermediate</p></div>
+            </div>
+            <div class="skill_logo">
+              <div><img src="./assets/css_logo.png" alt="css icon" class="skill_icon"></div>
+              <div><h3>CSS</h3><p>Intermediate</p></div>
+            </div>
+            <div class="skill_logo">
+              <div><img src="./assets/javascript_logo.png" alt="js icon" class="skill_icon"></div>
+              <div><h3>Javascript</h3><p>Intermediate</p></div>
+            </div>
+            </div >
+            <div class="second">
+              <div class="skill_logo">
+                <div><img src="./assets/python_logo.png" alt="python icon" class="skill_icon"></div>
+                <div><h3>Python</h3><p>Intermediate</p></div>
+              </div >
+            <div class="skill_logo">
+              <div><img src="./assets/C_logo.png" alt="c icon" class="skill_icon"></div>
+              <div><h3>C</h3><p>Basics</p></div>
+            </div>
+            <div class="skill_logo">
+              <div><img src="./assets/java_logoo.png" alt="java icon" class="skill_icon"></div>
+              <div><h3>Java</h3><p>Bacics</p></div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow-black.png"
+        alt="class_arrow"
+        class="icon arrow"
+        id="arroww_2"
+        onclick="location.href='./#projects'"
+      />
+      <!-- <button class="theme-toggle">black</button> -->
+    </section>
+    <section id="projects">
+      <p class="tag_line">My Recent</p>
+      <p class="Headings">Projects</p>
+      <div class="Project_container">
+
+        <div class="color_container">
+          <div class="img_container">
+            <img src="./assets/rock_paper_scissor_game.jpg" alt="Project" class="project-img">
+          </div>
+            <h2 class="skill_subtitle">Rock Paper scissor</h2>
+            <div class="btn_container">
+              <button class="btn btn_color_1" onclick="location.href='https://github.com/Varungowda21/Rock_Paper_Scissor.git'">Github</button>
+              <button class="btn btn_color_2" onclick="location.href='https://varungowda21.github.io/Rock_Paper_Scissor/'">Live Demo</button>
+            </div>
+          </div>
+        <div class="color_container">
+          <div class="img_container">
+            <img src="./assets/weather_app.jpg" alt="Project" class="project-img">
+          </div>
+            <h2 class="skill_subtitle">Weather App</h2>
+            <div class="btn_container">
+              <button class="btn btn_color_1" onclick="location.href='https://github.com/Varungowda21/Weather'">Github</button>
+              <button class="btn btn_color_2" onclick="location.href='https://varungowda21.github.io/Weather/'">Live Demo</button>
+            </div>
+          </div>
+       
+        <div class="color_container">
+          <div class="img_container">
+            <img src="./assets/tic_tak_toe.png" alt="Project" class="project-img">
+          </div>
+            <h2 class="skill_subtitle">Tic Tak Toe Game</h2>
+            <div class="btn_container">
+              <button class="btn btn_color_1" onclick="location.href='https://github.com/'">Github</button>
+              <button class="btn btn_color_2" onclick="location.href='https://github.com/'">Live Demo</button>
+            </div>
+          
+        </div>
+      </div>
+      <img
+      src="./assets/arrow-black.png"
+      alt="class_arrow"
+      class="icon arrow"
+      id="arroww_3"
+      onclick="location.href='./#contact'"
+    />
+    </section>
+    <section id="contact">
+      <p class="tag_line Text_contact">Get in touch</p>
+      <h2 class="contact_title">Contact Me</h2>
+      <div class="contact_info_outside_container">
+        <div class="contact_info_container">
+          <img src="./assets/email.png" alt="email" class="icon contact_icon mail_icon" id="gmail_icon">
+          <p><a href="mailto:varun990069@gmail.com">varun990069@gmail.com</a></p>
+        </div>
+        <div class="contact_info_container">
+          <img src="./assets/linkedin-black.png" alt="email" class="icon contact_icon" id="linkedin_icon_white">
+          <a href="https://www.linkedin.com" >Linkedin</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+      <div class="nav_link_container">
+        <ul class="nav-links nav_phone">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2023 Varun Gowda.K</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

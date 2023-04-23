@@ -1,0 +1,128 @@
+/* big screen */
+@media screen and (max-width:1500px){
+    #arroww_3{
+        height: 4rem;
+       position: absolute;
+       right: -8rem;
+       bottom: 1rem;
+       scroll-behavior: smooth;
+    }
+    .Text_contact{
+        margin-top: 5rem;
+    }
+}
+/* Desktop */
+
+@media screen and (max-width:1400px) {
+   #profile{
+    height: 83vh;
+    margin-bottom: 6rem;
+   }
+   /* .about_container{
+    flex-wrap: wrap;
+   } */
+}
+/* Tablet */
+@media screen and (max-width:1200px) {
+    #dekstop-nav{
+       display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+        margin-right: 0px;
+    }
+    #profile,.about_container_outside{
+        display: block;
+    }
+    section, .about_container_outside.section_container{
+        height: fit-content;
+    }
+    section{
+        margin: 0 5%;
+    }
+    .profile_about_pic_container{
+        width: 275px;
+        height: 275px;
+        margin:0 auto 2rem;
+    }
+    #skills, .skills_details_container{
+        margin-top: 2rem;
+    }
+    .about_container{
+        margin-top: 0;
+    }
+    .Project_container{
+        flex-direction: column;
+       }
+    .btn_container{
+        justify-content: center;
+       }
+    .arrow{
+        display: none;
+    }
+}
+/* mobile */
+@media screen and (max-width:600px) {
+    .logo_title{
+        font-size: 1.5rem;
+       }
+    .title{
+        font-size: 2rem;
+       }
+    .section_text_p2{
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+       }
+    #profile{
+        height: 83vh;
+        margin-bottom: 0;
+       }
+    .profile_about_pic_container{
+        width: auto;
+        height: 60vw;
+        justify-content: center;
+       }
+    .about_container, .contact_info_outside_container,.btn_container{
+        flex-wrap: wrap;
+       }
+    .article_container{
+        gap: 2.5rem;
+        }
+    .Project_container{
+         flex-direction: column;
+        }
+    .btn_container{
+         justify-content: center;
+        }
+    /* .tag_line{
+        margin-top: 3rem;
+    } */
+    .contact_title{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+       }
+    .contact_info_container{
+        margin: 0;
+        flex-direction: start;
+       }
+    .contact_info_container p,.nav-links li a{
+        font-size: 1rem;
+       }
+    .contact_info_outside_container{
+        margin-bottom: 2rem;
+    }
+    #contact,footer{
+        height: 40vh;
+    }
+    footer nav{
+    height: fit-content;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+    
+   }
+   .nav_phone{
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2.5rem;
+   }
+}

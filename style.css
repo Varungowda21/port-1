@@ -1,0 +1,437 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+:root {
+    --primary-color: #070a13;
+    --secondary-background_color: #f1f5f9;
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+.dark-mode {
+    --primary-color: #f1f5f9;
+    --secondary-background_color: #070a13;
+  }
+.theme-toggle{
+    height: 1.8rem;
+    cursor: pointer;
+}
+body{
+    color: var(--primary-color);
+    background-color: var(--secondary-background_color);
+    font-family: 'Poppins',Times, serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+p{
+    color: rgb(85,85,85);
+}
+/* heading for about,skill,project */
+.Headings{
+    color: var(--primary-color);
+    font-size: 3rem;
+    text-align: center;
+}
+/* Tag line of about,skill,project */
+.tag_line{
+    margin-top: 2rem;
+    margin-bottom:0.2rem;
+    text-align: center;
+}
+/* header nav section */
+a, .btn{
+    transition:all 300ms ease;
+}
+nav, .nav-links{
+    /* position: fixed; */
+    display: flex;
+    gap: 3.3rem;
+    list-style: none;
+    font-size: 1.5rem;
+    /* rewatch */
+}
+/* #dekstop-nav{
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    height:17vh;
+} */
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height:17vh;
+}
+a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+a:hover{
+    color:#00abe4;
+    text-decoration: underline;
+    text-underline-offset:1rem;
+    text-decoration-color:#00abe4;
+}
+/* .nav-links li::after{
+    content: '';
+    height: 3px;
+    width:0;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.nav-links li:hover::after{
+    width: 100%;
+} */
+.logo_title{
+    font-size: 2rem;
+}
+.logo_title:hover{
+    cursor: default;
+}
+/* hamburger and hamburger nav styling  */
+#hamburger-nav{
+    display: none;
+}
+.hamburger-menu{
+    position: relative;
+    display: inline-block;
+}
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+.hamburger-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links{
+    position:absolute;
+    top: 250%;
+    right: 0;
+    background-color:white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition:  all 0.3 ease-in-out;
+}
+.menu-links a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links li{
+    list-style: none;
+}
+.menu-links.open{
+    max-height: 300px;
+    width: 50vh;
+    z-index: 1;
+}
+
+.hamburger-icon.open span:nth-child(odd){
+   opacity: 0;
+}
+.hamburger-icon.open span:nth-child(2){
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+/* .hamburger-icon.open{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+} */
+/* end of hamburger and hamburger menu styling */
+section{
+    padding-top: 1vh;
+    /* 3rem */
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+    /* macking thing overlaping each other */
+}
+/* end of header nav section */
+/* start of profile section */
+#profile{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+.profile_about_pic_container{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+.title
+{
+    font-size: 3rem;
+    text-align:center;
+}
+.section_text{
+    align-self: center;
+    text-align: center;
+}
+.section_text p{
+    font-weight: 600;
+}
+.section_text_p1{
+    text-align: center;
+    font-size: 1rem;
+    
+}
+.section_text_p2{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    /* margin-top: 1rem; */
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.btn{
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+.btn_color_1, .btn_color_2{
+    border: rgb(53,53,53) 0.1rem solid;
+}
+.btn_color_1{
+    /* background: white; */
+    color: var(--primary-color);
+    background:  var(--secondary-background_color);
+}
+.btn_color_2{
+   cursor: pointer;
+   background-color:#00abe4;
+   color: white;
+   border-color: #00abe4;
+}
+.btn_color_1:hover{
+    cursor: pointer;
+    background-color:#00abe4;
+    color: white;
+    border: rgb(255,255,255) 0.1rem solid;
+}
+.btn_color_2:hover{
+    background-color: #2373ff;;
+}
+#social_container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap:1rem;
+}
+.icon{
+    cursor: pointer;
+    height: 2rem;
+}
+/* end of profile section */
+/* end of header section */
+
+/* start of about section*/
+#about{
+    position: relative;
+}
+
+
+.about_container_outside{
+    display: flex;
+    gap: 4rem;
+    height:70%;
+}
+.profile_about_pic_container{
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+.about_less{
+    opacity:0.9;
+}
+.about_container{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.about_detail_container{
+    justify-content: center;
+    flex-direction: column;
+}
+.about_container, .about_detail_container{
+    display: flex;
+}
+
+.about-pic{
+    border-radius: 2rem;
+}
+
+.details_container{
+    padding: 1.5rem;
+    flex: 1;
+    /* background: white; */
+    color: var(--primary-color);
+    background:  var(--secondary-background_color);
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    text-align: center;
+}
+.arrow{
+    height: 4rem;
+    position: absolute;
+    right: -5rem;
+    bottom: 2rem;
+    scroll-behavior: smooth;
+    /* background-color: #00abe4; */
+}
+/* end of about section */
+/* start of skill section */
+#skills{
+    position: relative;
+}
+.article_container{
+    display: flex;
+    flex-direction:row;
+    gap: 10rem;
+    justify-content: center;
+    text-align: initial;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2.5rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-radius: 2rem;
+    width: 18rem;
+    /* max-width: 2000px; */
+}
+.second{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2.5rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-radius: 2rem;
+    width: 18rem;
+    /* justify-content: left; */
+}
+.skill_logo{
+    display: flex;
+    gap: 3rem;
+   
+    /* justify-content: center; */
+}
+.skill_icon{
+    height: 2rem;
+}
+/* end of skill section */
+/* start of project section */
+#projects{
+    position: relative;
+}
+.Project_container{
+    /* margin-top: 1rem; */
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.color_container{
+    padding: 2rem;
+    margin: 1rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-radius: 2rem;
+}
+.img_container{
+    display: flex;
+    justify-content: center;
+}
+.project-img{
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+.skill_subtitle{
+    margin: 1rem;
+    color:  var(--primary-color);
+}
+
+.btn_container{
+    display: flex;
+    gap: 1rem;
+}
+
+.skill_subtitle{
+ text-align: center;
+} 
+/* end of project section */
+/* start of contact section */
+#contact{
+    font-display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 65vh;
+}
+.contact_title{
+    margin-bottom: 4.2rem;
+    font-size: 2.5rem;
+    text-align:center;
+    color: var(--primary-color);
+}
+.contact_info_outside_container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+}
+.contact_info_container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    text-decoration: underline;
+    text-underline-offset:1rem;
+    
+}
+.contact_info_container a:hover{
+    text-decoration: underline;
+}
+.mail_icon{
+height: 2.5rem;
+} 
+/* end of contact section */
+/* start of footer section*/
+.footer{
+    height: 26vh;
+    margin: 0 1rem;
+}
+footer p{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+/* end of footer section */
